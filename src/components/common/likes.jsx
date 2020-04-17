@@ -4,7 +4,7 @@ const Likes = (props) => {
   if (!props.fav) starClass += "-o";
   return (
     <i
-      class={starClass}
+      className={starClass}
       style={{ cursor: "pointer" }}
       onClick={props.onFavToggle}
       aria-hidden="true"

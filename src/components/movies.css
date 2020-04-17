@@ -15,7 +15,7 @@ tr:nth-child(even) {
 }
 
 tr:hover {
-  background-color: #ddd;
+  background-color: rgb(153, 157, 160);
 }
 
 thead {
