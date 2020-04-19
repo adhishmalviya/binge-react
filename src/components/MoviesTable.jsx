@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Likes from "./common/likes";
 import TableHeader from "./common/tableheader";
+import { Link } from "react-router-dom";
 class MoviesTable extends Component {
   render() {
     const attributes = [
@@ -23,7 +24,9 @@ class MoviesTable extends Component {
           <tbody>
             {paginatedMovies.map((movie) => (
               <tr key={movie._id}>
-                <td>{movie.title}</td>
+                <td>
+                  <Link to={`/movies/${movie._id}`}>{movie.title}</Link>
+                </td>
                 <td>{movie.genre.name}</td>
                 <td>{movie.numberInStock}</td>
                 <td>{movie.dailyRentalRate}</td>
