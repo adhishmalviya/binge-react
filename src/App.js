@@ -3,7 +3,7 @@ import { Route, Redirect, Switch } from "react-router-dom";
 import Movies from "./components/movies";
 import Rentals from "./components/rentals";
 import Customers from "./components/customers";
-import NotFound from "./components/not-found";
+import NotFound from "./components/notFound";
 import NavBar from "./components/navBar";
 import "./App.css";
 import MovieForm from "./components/movieForm";
@@ -22,9 +22,9 @@ class App extends Component {
             <Route path="/movies" component={Movies}></Route>
             <Route path="/customers" component={Customers}></Route>
             <Route path="/rentals" component={Rentals}></Route>
-            <Route path="/not-found" component={NotFound}></Route>
+            <Route path="/notFound" component={NotFound}></Route>
             <Redirect exact from="/" to="/movies" />
-            <Redirect to="/not-found" />
+            <Redirect to="/notFound" />
           </Switch>
         </main>
       </React.Fragment>

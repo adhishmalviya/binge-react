@@ -1,5 +1,6 @@
 import React from "react";
-const Customers = (props) => {
+
+const Customers = () => {
   return <h1>Customers</h1>;
 };
 

@@ -1,11 +1,12 @@
 import React from "react";
-const MovieForm = (props) => {
+
+const MovieForm = ({ match, history }) => {
   return (
     <div>
-      <h1>Movie id is: {props.match.params.id}</h1>
+      <h1>Movie Form {match.params.id} </h1>
       <button
-        className=" btn-primary btn-danger"
-        onClick={() => props.history.replace("/movies")}
+        className="btn btn-primary"
+        onClick={() => history.push("/movies")}
       >
         Save
       </button>
